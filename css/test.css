@@ -1,45 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* article {
+    max-width: 980px;
+    margin: auto;
+} */
 
 .top-page {
-    background-image: url(img/landscape-background-header.webp);
-    background-repeat: no-repeat;
-    height: 1000px;
+    background-image: url(.../img/landscape-background-header.webp);
     background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding: 120px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+} 
+
+@media (min-width: 320px) {
+    .menu-top a {
+        display: inline-flex;
+        justify-content: space-around;
+
+}
+
+.description-top {
+    padding: 90px 0px 150px 0px;
+    min-width: 320px;
+    display: block
 }
 
 .top-nav img {
-    width: 180px;
+    width: 188px;
 }
 
 .menu-top a {
     color: white;
     font-family: Roboto, sans-serif;
     font-size: 17px;
-    font-stretch: 100%;
     font-weight: 400;
     line-height: 12.6;
-    max-width: 100%;
     text-decoration: none;
 }
 
 .menu-top button {
+    background-color: transparent;
+    border-color:rgb(20, 169, 238);
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
     color:white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.6px;
-    font-weight: 700;
     line-height: 12.6px;
-    background-color: transparent;
-    border-color: white;
-    border-radius: 12px;
-    text-align: center;
+    margin: 10px;
+    max-width: 100px;
     padding: 10px;
+    transition: 0.4s;
 }
 
 .menu-top button:hover {
-    font-weight: bold;
+    background-color: rgb(20, 169, 238);
+    color: white;
+    cursor: pointer;
+
 }
 
 .menu-top button:after {
@@ -62,7 +93,6 @@
     font-size: 170px;
     height: auto;
     letter-spacing: normal;
-    line-height: 70px;
 }
 
 #next-trip {
@@ -80,7 +110,6 @@
     font-size: 17px;
     font-weight: 700;
     letter-spacing: 0.51px;
-    line-height: 28.9px;
 }
 
 .description-top button {
@@ -88,11 +117,22 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.6px;
-    font-weight: 700;
-    line-height: 12.6px;
+    font-weight: bold;
     background-color: transparent;
     border-color: white;
-    border-radius: 12px;
-    margin: 
+    border-radius: 6px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100px;
+    transition: 0.4s;
+
 }
 
+.description-top button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*to fix the pic in "contact us" section use tag background-attachemnt: fixed*/
