@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
@@ -7,37 +8,34 @@
     padding: 0;
 }
 
-/* article {
+article {
     max-width: 980px;
     margin: auto;
-} */
-
-.top-page {
-    background-image: url(.../img/landscape-background-header.webp);
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    padding: 120px;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-} 
-
-@media (min-width: 320px) {
-    .menu-top a {
-        display: inline-flex;
-        justify-content: space-around;
-
 }
 
-.description-top {
-    padding: 90px 0px 150px 0px;
-    min-width: 320px;
-    display: block
-}
+/*Landing Page*/
 
 .top-nav img {
     width: 188px;
+    display: flex
+}
+
+.top-page {
+    align-items: center;
+    background-image: url(img/landscape-background-header.webp);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    padding: 130px;
+} 
+
+.menu-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
 }
 
 .menu-top a {
@@ -77,6 +75,12 @@
     content: '\2192';
 }
 
+.description-top {
+    padding: 90px 0px 150px 0px;
+    min-width: 320px;
+    display: block
+}
+
 .top-header {
     color:white;
     font-family: 'Roboto', serif;
@@ -108,22 +112,24 @@
     color:white;
     font-family: 'Roboto', serif;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: lighter;
     letter-spacing: 0.51px;
 }
 
 .description-top button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
     color:white;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.6px;
-    font-weight: bold;
-    background-color: transparent;
-    border-color: white;
-    border-radius: 6px;
-    padding: 10px;
+    line-height: 12.6px;
     margin: 10px;
     max-width: 100px;
+    padding: 10px;
     transition: 0.4s;
 
 }
@@ -133,6 +139,38 @@
     color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+/*Abouts Us Page*/
+
+.description-about-us {
+    align-items: center;
+    background-image: url(img/man-beach-background.webp);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    padding: 480px;
+}
+
+.description-about-us h2 {
+    color:rgb(111, 115, 128);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.big-text-left {
+    color: rgb(80, 81, 85);
+    font-family: 'Playfair Display', serif;
+    font-size: 39px;
+}
+
+.small-text-right {
+    color: rgb(80, 81, 85);
+    font-family: 'Roboto', serif;
+    font-size: 19px;
 }
 
 /*to fix the pic in "contact us" section use tag background-attachemnt: fixed*/
