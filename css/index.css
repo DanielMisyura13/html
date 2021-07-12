@@ -1,14 +1,176 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    max-width: 980px;
+    margin: auto;
+}
+
+/*Landing Page*/
+
+.top-nav img {
+    width: 188px;
+    display: flex
+}
+
 .top-page {
+    align-items: center;
     background-image: url(/img/landscape-background-header.webp);
-    background-size: cover;
     background-position: center;
-    min-height: 400px;
-    padding: 120px;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    padding: 130px;
+} 
+
+.menu-top {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-} 
+    float: right;
+}
+
+.menu-top a {
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 12.6;
+    text-decoration: none;
+}
+
+.menu-top button {
+    background-color: transparent;
+    border-color:rgb(20, 169, 238);
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color:white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.6px;
+    line-height: 12.6px;
+    margin: 10px;
+    max-width: 100px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.menu-top button:hover {
+    background-color: rgb(20, 169, 238);
+    color: white;
+    cursor: pointer;
+
+}
+
+.menu-top button:after {
+    content: '\2192';
+}
+
+.description-top {
+    padding: 90px 0px 150px 0px;
+    min-width: 320px;
+    display: block
+}
+
+.top-header {
+    color:white;
+    font-family: 'Roboto', serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.36px;
+    line-height: 19.2px;
+    text-transform: uppercase;
+}
+
+#huge-norway {
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-size: 170px;
+    height: auto;
+    letter-spacing: normal;
+}
+
+#next-trip {
+    color:white;
+    font-family: 'Roboto', serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.51px;
+    line-height: 39.1px;
+}
+
+#top-info {
+    color:white;
+    font-family: 'Roboto', serif;
+    font-size: 17px;
+    font-weight: lighter;
+    letter-spacing: 0.51px;
+}
+
+.description-top button {
+    background-color: transparent;
+    border-color: white;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    color:white;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.6px;
+    line-height: 12.6px;
+    margin: 10px;
+    max-width: 100px;
+    padding: 10px;
+    transition: 0.4s;
+
+}
+
+.description-top button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*Abouts Us Page*/
+
+.description-about-us {
+    align-items: center;
+    background-image: url(/img/man-beach-background.webp);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    max-width: 100%;
+    padding: 480px;
+}
+
+.description-about-us h2 {
+    color:rgb(111, 115, 128);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.big-text-left {
+    color: rgb(80, 81, 85);
+    font-family: 'Playfair Display', serif;
+    font-size: 39px;
+}
+
+.small-text-right {
+    color: rgb(80, 81, 85);
+    font-family: 'Roboto', serif;
+    font-size: 19px;
+}
+
+/*to fix the pic in "contact us" section use tag background-attachemnt: fixed*/
