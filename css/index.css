@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
@@ -13,38 +12,64 @@ article {
     margin: auto;
 }
 
+header {
+    max-width: 980px;
+    margin: auto;
+}
+/*body {
+    max-width: 1000px;
+    margin: auto;
+}*/
+
+:root {
+    --main-color: white;
+    --text-color: rgb(80, 81, 85);
+    font-family: 'Roboto';
+}
+
 /*Landing Page*/
 
 .top-nav img {
     width: 188px;
-    display: flex
+    max-width: 980px;
+    display: grid;
+
 }
 
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .menu-top {
+        display: flex;
+    }
+}
+ 
 .top-page {
-    align-items: center;
     background-image: url(../img/landscape-background-header.webp);
     background-position: center;
     background-size: cover;
     height: auto;
     justify-content: center;
-    max-width: 100%;
-    padding: 130px;
+    padding-top: 115px;
+    padding-bottom: 275px;
 } 
+
 
 .menu-top {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    float: right;
 }
 
 .menu-top a {
-    color: white;
-    font-family: Roboto, sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 12.6;
+    color: var(--main-color);
+    font-size: 15px;
     text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 9px 9px;
 }
 
 .menu-top button {
@@ -53,7 +78,7 @@ article {
     border-radius: 5px 5px 5px 5px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    color:white;
+    color: var(--main-color);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.6px;
@@ -66,76 +91,71 @@ article {
 
 .menu-top button:hover {
     background-color: rgb(20, 169, 238);
-    color: white;
+    color: var(--main-color);
     cursor: pointer;
 
 }
 
-.menu-top button:after {
-    content: '\2192';
-}
-
 .description-top {
-    padding: 90px 0px 150px 0px;
-    min-width: 320px;
-    display: block
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    align-items: left;
+    padding-top: 150px;
 }
 
 .top-header {
-    color:white;
-    font-family: 'Roboto', serif;
+    color:var(--main-color);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.36px;
     line-height: 19.2px;
     text-transform: uppercase;
 }
 
 #huge-norway {
-    color:white;
+    color:var(--main-color);
     font-family: 'Playfair Display', serif;
     font-size: 170px;
     height: auto;
     letter-spacing: normal;
 }
 
-#next-trip {
-    color:white;
-    font-family: 'Roboto', serif;
-    font-size: 23px;
-    font-weight: 700;
+.description-text {
+    color: var(--main-color);
+    line-height: 1cm;
+    word-spacing: 0.1cm;
     letter-spacing: 0.51px;
-    line-height: 39.1px;
+    font-size: 17px;
+    
 }
 
-#top-info {
-    color:white;
-    font-family: 'Roboto', serif;
-    font-size: 17px;
-    font-weight: lighter;
-    letter-spacing: 0.51px;
+.description-text .bold {
+    font-weight: 700;
+}
+
+#next-trip {
+    font-size: 23px;
 }
 
 .description-top button {
     background-color: transparent;
-    border-color: white;
+    border-color: var(--main-color);
     border-radius: 6px;
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-    color:white;
+    color:var(--main-color);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-size: 12.6px;
-    line-height: 12.6px;
-    margin: 10px;
     max-width: 100px;
     padding: 10px;
     transition: 0.4s;
-
+    margin-top: 30px;
 }
 
 .description-top button:hover {
-    background-color: white;
+    background-color: var(--main-color);
     color: black;
     font-weight: bold;
     cursor: pointer;
@@ -143,34 +163,83 @@ article {
 
 /*About Us Page*/
 
-.description-about-us {
-    align-items: center;
-    background-image: url(../img/man-beach-background.webp);
-    background-position: center;
+.about-us {
+    /*align-items: center;*/
+    background-image: url(../img/person-on-the-beach.webp);
+    /*background-position: center;
     background-size: cover;
     height: auto;
     justify-content: center;
     max-width: 100%;
-    padding: 480px;
+    padding: 480px;*/
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    justify-content: center;
+    padding: 500px;
 }
 
-.description-about-us h2 {
+.paragraph-about-us {
+    display: flex;
+
+}
+
+.header-about-us {
     color:rgb(111, 115, 128);
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    line-height: 19.2px;
 }
 
 .big-text-left {
-    color: rgb(80, 81, 85);
+    color: var(--text-color);
     font-family: 'Playfair Display', serif;
     font-size: 39px;
+    line-height: 46.8px;
+    letter-spacing: 1.17px;
 }
 
 .small-text-right {
-    color: rgb(80, 81, 85);
-    font-family: 'Roboto', serif;
+    color: var(--text-color);
+    font-weight: 200;
     font-size: 19px;
+    line-height: 32.3px;
 }
+
+
+/*Tour Itinerary*/
+
+.description-tour-itinerary {
+    background-image: url(../img/dark-gray-background.webp);
+    background-size: cover;
+    padding: 0px 480px 0px 200px; 
+    text-align: left;
+    justify-content: left;
+    display: flex;
+    color: rgb(255, 255, 255, 0.6);
+
+}
+
+.description-tour-itinerary {
+    display: flex;
+}
+
+.description-tour-itinerary logo-tour {
+    padding-top: 775px;
+}
+
+.description-tour-itinerary h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    line-height: 19.2px;
+}
+
+
 
 /*to fix the pic in "contact us" section use tag background-attachemnt: fixed*/
