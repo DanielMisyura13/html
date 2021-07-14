@@ -8,12 +8,12 @@
 }
 
 article {
-    max-width: 980px;
+    max-width: 1180px;
     margin: auto;
 }
 
 header {
-    max-width: 980px;
+    max-width: 1180px;
     margin: auto;
 }
 /*body {
@@ -163,25 +163,35 @@ header {
 
 /*About Us Page*/
 
-.about-us {
-    /*align-items: center;*/
+
+.paragraph-about-us {
+    background: white;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-weight: 200;
+    align-items: left;
+    height: 563px;
+    padding-top: 200px;
+    max-width: 2080px;
+    margin: auto;
+}
+
+.paragraph-steps {
     background-image: url(../img/person-on-the-beach.webp);
     /*background-position: center;
     background-size: cover;
     height: auto;
     justify-content: center;
     max-width: 100%;
-    padding: 480px;*/
     background-position: center;
     background-size: cover;
-    height: auto;
-    justify-content: center;
-    padding: 500px;
+    height: auto;*/
 }
 
-.paragraph-about-us {
-    display: flex;
-
+.paragraph-steps{
+    
 }
 
 .header-about-us {
@@ -212,15 +222,18 @@ header {
 
 /*Tour Itinerary*/
 
+.logo-tour {
+    
+}
+
 .description-tour-itinerary {
     background-image: url(../img/dark-gray-background.webp);
     background-size: cover;
-    padding: 0px 480px 0px 200px; 
     text-align: left;
-    justify-content: left;
-    display: flex;
+    padding: 0px 480px 0px 200px; 
+    /*justify-content: left;
+    display: flex;*/
     color: rgb(255, 255, 255, 0.6);
-
 }
 
 .description-tour-itinerary {
